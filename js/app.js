@@ -121,6 +121,7 @@ function darkMode() {
     rootStyle.setProperty('--bg-secundary', '#202020');
     rootStyle.setProperty('--text', '#fff');
     rootStyle.setProperty('--shadow', '#131313');
+    rootStyle.setProperty('--bg-card', '#191919');
   } else if (btnSun.classList.contains('fa-moon')) {
     btnSun.classList.remove('fa-moon');
     btnSun.classList.add('fa-sun');
@@ -128,5 +129,6 @@ function darkMode() {
     rootStyle.setProperty('--bg-secundary', '#f8f8f8');
     rootStyle.setProperty('--text', '#000');
     rootStyle.setProperty('--shadow', '#cacaca');
+    rootStyle.setProperty('--bg-card', '#fff');
   }
 }

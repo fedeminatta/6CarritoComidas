@@ -4,6 +4,7 @@
   --bg-secundary: #f8f8f8
   --text: #000000
   --shadow: #cacaca
+  --bg-card: #fff
 
 html
   overflow-x: hidden
@@ -150,7 +151,7 @@ ul
   position: relative
   .cart
     font-size: 1.4rem
-    color: var(--text)
+    color: #000
     padding: 30px
     &:hover
       color: #2baf2b
@@ -213,9 +214,9 @@ i.sun
   margin: 20px
   max-width: 270px
   text-align: center
-  border: 8px solid var(--bg-secundary)
+  border: 8px solid var(--bg-card)
   border-radius: 4px
-  background: var(--bg-secundary)
+  background: var(--bg-card)
   filter: drop-shadow(-3px 2px 5px var(--shadow))
   img
     background-size: cover
@@ -247,14 +248,10 @@ i.sun
   align-items: center
   flex-flow: row wrap
 
-.footer
-  margin: 20px
-
 .menu-footer
   display: flex
-  flex-flow: column wrap
   width: 30%
-  margin-top: 20px
+  flex-flow: column wrap
   background: var(--bg-primary)
   padding: 40px
   line-height: 34px
