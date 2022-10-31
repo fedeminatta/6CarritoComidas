@@ -17,6 +17,13 @@ function cargarEventListeners() {
   // Cuando se elimina un curso del carrito
   carrito.addEventListener('click', eliminarCurso);
 
+  // Muestra los cursos del localStorage
+  document.addEventListener('DOMContentLoaded', () => {
+    articulosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    carritoHTML();
+  });
+
   // Al Vaciar el carrito
   vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
@@ -79,8 +86,10 @@ function eliminarCurso(e) {
 
 // Muestra el curso seleccionado en el Carrito
 function carritoHTML() {
+  // limpia el html
   vaciarCarrito();
 
+  // recorre el carrito y genera el html
   articulosCarrito.forEach((curso) => {
     const row = document.createElement('tr');
     row.innerHTML = `
@@ -94,8 +103,16 @@ function carritoHTML() {
                     <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
                </td>
           `;
+    // Agrega el HTML del carrito en el tbody
     contenedorCarrito.appendChild(row);
   });
+
+  // Agregar el carrito de compras al Storage
+  sincronizarStorage();
+}
+
+function sincronizarStorage() {
+  localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
 }
 
 // Elimina los cursos del carrito en el DOM
