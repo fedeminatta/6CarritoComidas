@@ -22,9 +22,6 @@ function cargarEventListeners() {
 
     carritoHTML();
   });
-
-  // Al Vaciar el carrito
-  vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
 
 // Funciones
