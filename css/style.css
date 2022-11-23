@@ -7,6 +7,11 @@
   --bg-card: #fff;
 }
 
+* {
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
 html {
   overflow-x: hidden;
 }
