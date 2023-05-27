@@ -8,7 +8,6 @@
 }
 
 * {
-  -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
 
@@ -37,8 +36,7 @@ html {
 
 .full-width {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -106,8 +104,7 @@ td:last-child {
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .button:hover {
   color: #333;
@@ -119,7 +116,6 @@ td:last-child {
   color: #FFF;
   background-color: #2baf2b;
   border-color: #2baf2b;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .button-primary:hover {
@@ -147,7 +143,6 @@ ul {
   color: white;
 }
 .restaurant h2 {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding-left: 8%;
   display: inline-block;
@@ -182,16 +177,9 @@ ul {
 
 .nav-cart {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 .submenu {
@@ -259,16 +247,9 @@ i.sun:hover {
 }
 
 #lista-cursos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: row wrap;
+  justify-content: center;
   width: 85%;
   margin: auto;
 }
@@ -284,8 +265,7 @@ i.sun:hover {
   border: 8px solid var(--bg-card);
   border-radius: 4px;
   background: var(--bg-card);
-  -webkit-filter: drop-shadow(-3px 2px 5px var(--shadow));
-          filter: drop-shadow(-3px 2px 5px var(--shadow));
+  filter: drop-shadow(-3px 2px 5px var(--shadow));
 }
 .card img {
   background-size: cover;
@@ -316,30 +296,16 @@ i.sun:hover {
 }
 
 .container-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .menu-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 30%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   background: var(--bg-primary);
   padding: 40px;
   line-height: 34px;
@@ -349,15 +315,11 @@ i.sun:hover {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
   transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
 }
 
 .menu-footer a:hover {
-  -webkit-transform: translate(3px);
-          transform: translate(3px);
+  transform: translate(3px);
   color: #2baf2b;
 }
 
